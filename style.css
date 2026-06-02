@@ -1,0 +1,322 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: grey;
+    transition: transform 0.3s ease-in;
+    font-family: "Saira", sans-serif;
+    height: 100vh;
+    position: absolute;
+}
+
+.sidebar nav{
+    padding: 22px;
+}
+
+.sidebar nav li{
+   list-style: none;
+   font-size: 24px;
+   padding: 33px 0 ;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+   
+}
+.main{
+    
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+
+.infoContainer{
+     
+    height: 73vh;
+    width: 76vw;
+    margin: 97px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devpic img{
+     width: 311px;
+    justify-content: space-around;
+    height: 73vh; 
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+     font-family: "Saira", sans-serif;
+}
+.hello{
+    font-size: 36px;
+    
+}
+.name{
+    font-size: 40px;
+    font-weight: bold;
+     font-family: "Saira", sans-serif;
+}
+.about{
+    font-size: 2em;
+}
+.moreabout{
+    font-size: 1em;
+   
+    
+}
+.buttons {
+    margin-top: 2em;
+    font-size: 13px;
+}
+.btn{
+    padding: 10px;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin:2px 10px;
+    cursor: pointer;
+     
+}
+
+.btn-sm{
+    font-size: 17px;
+    margin: 12px 0;
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.contactForm{
+    font-family: "Saira", sans-serif;
+    padding-top: 129px;
+    padding: 0 34px;
+    margin: 0 58px;
+}
+.contactForm h1{
+    font-size: 36px;
+    text-align: center;
+    /* margin: 50px 0;  */
+}
+.contactForm form div{
+    padding: 4px 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contactForm form div input{
+    border-radius: 6px;
+    /* width: 35vw; */
+    font-size: 20px;
+    padding: 3px;
+    margin: 6px 0; 
+    
+}
+.contactForm form{
+   
+    margin: 0 40px; 
+}
+#emailHelp{
+    font-family: 10px;
+    margin: 0 12px;
+    font-size: 11px;
+    padding: 5px 0;
+}
+
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 15px;
+   margin: 3px 0;
+}
+.blogitem {
+   margin: 20px;
+   font-family: "Saira", sans-serif;
+   font-size: 16px;
+
+}
+
+.blogContainer{
+    margin: 83px 88px;
+}
+ h1 {
+  font-family: "Saira", sans-serif;
+  margin: 20px;
+}
+ .intro h2{
+    font-family: "Saira", sans-serif;
+    margin: 10px;
+ }
+.intro{
+    margin: 83px 88px;
+}
+
+ .intro p{
+     margin: 10px;
+    
+ } 
+ .skillContainer{
+    padding:10px;
+ }
+ .skillItem{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+ }
+ .skill{
+    width: 270px;
+    height: 6px;
+    background-color: grey;
+    border: 2px solid black;
+    
+ }
+ .hundred{
+    width: 265px;
+    background-color: blueviolet;
+ }
+ .fifty{
+    width: 135px;
+    background-color: aqua;
+ }
+ .t5{
+    width: 75px;
+    background-color: green;
+ }
+
+  .sidebarGo{
+    transform: translate(-271px, 0px);
+    position: absolute;
+    }
+ .hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+ }
+.ham{
+   margin-left: 5px;
+    margin-top: 5px;
+}
+
+.cross{
+    margin-left: 137px;
+    margin-top: 5px;
+}
+ @media (max-width: 1150px){
+    
+    .buttons{
+        font-size: 8px;
+    }
+    .devpic{
+        display: none;
+    }
+    .intro, .blogContainer, .contactForm{
+        margin:  50px 8px;
+    }
+ }
+
+ 
+
+.services{
+    padding: 80px 10%;
+    background: white;
+    color: black;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-box{
+    background: darkgrey;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid transparent;
+}
+
+.service-box:hover{
+    transform: translateY(-10px);
+    border-color: black;
+    box-shadow: 0 0 15px black;
+}
+
+.service-box i{
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.service-box h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.service-box p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-box button{
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service-box button:hover{
+    background: grey;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 992px){
+
+    .services-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .section-title{
+        font-size: 32px;
+    }
+
+    .services-container{
+        grid-template-columns: 1fr;
+    }
+
+    .service-box{
+        padding: 25px 15px;
+    }
+
+}
